@@ -78,7 +78,7 @@ public class SecurityConfig {
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)//khai bao ko su dung session trong project
                 .and()
                 .authorizeHttpRequests() // Quy định lại các rule liên quan tới chứng thực cho link dc gọi
-                    .antMatchers("/signin","/signup","/demo/**").permitAll() //cho phép vào luôn mà ko cần chứng thực
+                    .antMatchers("/signin","/signup","/demo/**","/product/**").permitAll() //cho phép vào luôn mà ko cần chứng thực
 
                     .anyRequest().authenticated() // Tất cả link còn lại phải chứng thuwcj
 
