@@ -8,4 +8,6 @@ public interface ProductServiceImp {
 
     List<ProductResponse> getProdctByCategory(int id);
 
+
+    List<ProductResponse> getAllProduct();
 }
